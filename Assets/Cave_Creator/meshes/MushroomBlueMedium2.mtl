@@ -1,0 +1,10 @@
+# MTL written from E:\3d\3D-Objekte\Cave creator\Textures\MushroomBlueMedium2.obj
+newmtl MushroomBlue
+Kd 1 1 1
+Ns 2
+d 0
+illum 2
+Ka 0.5 0.5 0.5
+Ks 0.135293 0.0956805 0.1405
+map_Kd E:\3d\3D-Objekte\Cave creator\Textures\MushroomBlue.tga
+map_Ka E:\3d\3D-Objekte\Cave creator\Textures\MushroomBlue_L.tga

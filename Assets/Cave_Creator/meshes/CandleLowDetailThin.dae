@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>modo 501 [Build 43413], Microsoft Windows 7 Service Pack 1 (6.1.7601 Service Pack 1)</authoring_tool>
+            <comments>
+                Plug-in: [Build 43413];
+                Use Absolute Path: No;
+                Merge Reference Items: No;
+                Save Hidden Items: Yes;
+                Save Cameras: Yes;
+                Save Lights: Yes;
+                Save Locators: Yes;
+                Save Triangles as Triangles: No;
+                Bake Matrices: No;
+                Save Vertex Normals: Yes;
+                Save UV Texture Coordinates: Yes;
+                Save Vertex Colors: Yes;
+                Save Vertex Weights: Yes;
+                Save Animation: Yes;
+                Sample Animation: No;
+                Sample Animation Start: 0;
+                Sample Animation End: 120;
+                Save modo Profile: Yes;
+                Save Maya Profile: Yes;
+                Save 3ds Max Profile: Yes;
+                Formatted Arrays: Yes;
+            </comments>
+            <source_data>file:///E:/3d/3D-Objekte/Cave%20creator/Textures/CandleLowDetailThin.lwo</source_data>
+        </contributor>
+        <created>2011-09-12T14:46:31Z</created>
+        <modified>2011-09-12T14:46:31Z</modified>
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="Image0001" name="Image0001">
+            <init_from>../Textures/Candle.tga</init_from>
+        </image>
+        <image id="Image0002" name="Image0002">
+            <init_from>../Textures/Candle_L.tga</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="Material-CandleSmall" name="CandleSmall">
+            <instance_effect url="#Effect-CandleSmall" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="Effect-CandleSmall" name="CandleSmall">
+            <profile_COMMON>
+                <newparam sid="Image0002-surface">
+                    <surface type="2D">
+                        <init_from>Image0002</init_from>
+                        <format>A8R8G8B8</format>
+                    </surface>
+                </newparam>
+                <newparam sid="Image0002-sampler">
+                    <sampler2D>
+                        <source>Image0002-surface</source>
+                        <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+                        <magfilter>LINEAR</magfilter>
+                    </sampler2D>
+                </newparam>
+                <newparam sid="Image0001-surface">
+                    <surface type="2D">
+                        <init_from>Image0001</init_from>
+                        <format>A8R8G8B8</format>
+                    </surface>
+                </newparam>
+                <newparam sid="Image0001-sampler">
+                    <sampler2D>
+                        <source>Image0001-surface</source>
+                        <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+                        <magfilter>LINEAR</magfilter>
+                    </sampler2D>
+                </newparam>
+                <technique sid="common">
+                    <phong>
+                        <emission>
+                            <texture texture="Image0002-sampler" texcoord="map1" />
+                        </emission>
+                        <diffuse>
+                            <texture texture="Image0001-sampler" texcoord="map1" />
+                        </diffuse>
+                        <specular>
+                            <color sid="specular_effect_rgb">0.2 0.2 0.2 1</color>
+                        </specular>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent_effect_rgb">0 0 0 1</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency_effect_float">-1.#IND</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="Geometry-CandleLowDetailThin" name="CandleLowDetailThin">
+            <mesh>
+                <source id="Geometry-CandleLowDetailThin-positions" name="positions">
+                    <float_array id="Geometry-CandleLowDetailThin-positions-array" count="201">
+                        -0.0059742 0.248782 0.00504595
+                        -0.0181016 0.269836 0.00799419
+                        -0.00254306 0.249027 0.00490565
+                        -0.0151247 0.271421 0.00730052
+                        -0.00712883 0.255026 0.00618776
+                        -0.00447184 0.257219 0.0061436
+                        -0.0108457 0.259994 0.00743542
+                        -0.00932078 0.263094 0.00741996
+                        -0.0146599 0.264424 0.00867536
+                        -0.0116787 0.266001 0.00798429
+                        -0.00409907 0.248427 0.0080428
+                        -0.00564077 0.255645 0.00923268
+                        -0.00992367 0.261066 0.0104947
+                        -0.0135828 0.26644 0.0111549
+                        -0.0170267 0.271857 0.0104724
+                        0.0137067 0.030652 -0.0154774
+                        -0.0016856 0.0304694 -0.0215882
+                        -0.0113901 0.0281053 -0.00826028
+                        -0.0152318 0.021482 0.00161462
+                        -0.0109175 0.0190673 0.0114498
+                        -0.000935811 0.0203385 0.0154449
+                        0.00888844 0.0234247 0.0112367
+                        0.0127555 0.0287703 0.001336
+                        -0.000254421 0.258275 -0.00242875
+                        -0.00818628 0.255504 -0.00501004
+                        -0.0149885 0.251582 -0.00106064
+                        -0.0166764 0.248806 0.00710592
+                        -0.0122614 0.248801 0.0147058
+                        -0.00432955 0.251572 0.0172871
+                        0.0024727 0.255494 0.0133377
+                        0.00416055 0.25827 0.00517115
+                        -0.00426118 0.248905 0.00497591
+                        0.0183215 0.0268732 -0.0187569
+                        -0.00168356 0.0266359 -0.026699
+                        -0.0212729 0.0176934 -0.0183402
+                        -0.029134 0.013471 0.00158739
+                        -0.0206097 0.0138019 0.0213576
+                        -0.000665113 0.0170795 0.0293611
+                        0.0190907 0.0176441 0.0208333
+                        0.0270128 0.0187979 0.000843746
+                        0.0221531 0.0139515 -0.0227008
+                        -0.0015015 0.0136709 -0.0320917
+                        -0.0247477 0.0072756 -0.0221238
+                        -0.034113 0.00581406 0.00151058
+                        -0.0240243 0.00573346 0.0248781
+                        -0.000424871 0.00879289 0.034325
+                        0.0229351 0.00946048 0.0242416
+                        0.0323554 0.00815669 0.000551476
+                        0.027736 0.00885008 -0.0284511
+                        -0.0015147 0.00850307 -0.0400638
+                        -0.0303771 0.00647585 -0.027619
+                        -0.0419775 0.00565545 0.00162642
+                        -0.0294975 0.00532071 0.0305172
+                        -0.000283205 0.00749561 0.0421667
+                        0.0286031 0.00832114 0.0296977
+                        0.0402398 0.00731364 0.000415435
+                        0.0330099 -0.00353141 -0.0338813
+                        -0.00139763 -0.00353141 -0.0475415
+                        -0.0007476 -0.00353141 0.000897854
+                        -0.0353766 -0.00353141 -0.0328741
+                        -0.0490222 -0.00353141 0.00152728
+                        -0.0343419 -0.00353141 0.0355114
+                        6.20056e-005 -0.00353141 0.0491752
+                        0.0340409 -0.00353141 0.0345078
+                        0.0476902 -0.00353141 0.000102798
+                        0.00810262 0.0377425 -0.00815224
+                        -0.00167935 0.0370262 -0.0121858
+                    </float_array>
+                    <technique_common>
+                        <accessor count="67" source="#Geometry-CandleLowDetailThin-positions-array" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="Geometry-CandleLowDetailThin-normals" name="normals">
+                    <float_array id="Geometry-CandleLowDetailThin-normals-array" count="387">
+                        0.0640759 -0.985556 -0.156762
+                        -0.501389 0.764261 -0.405603
+                        0 -1 0
+                        -0.566436 0.646283 0.51134
+                        -0.282543 0.745437 0.603732
+                        -0.385645 0.894906 0.224547
+                        -0.0390828 0.885824 0.462373
+                        0.0213349 0.9852 0.170078
+                        -0.136691 0.985355 -0.101934
+                        -0.420584 0.886197 -0.194327
+                        -0.664045 0.745814 -0.0529683
+                        -0.72446 0.646437 0.239327
+                        0.895938 0.404487 0.183536
+                        0.549625 0.810986 -0.200535
+                        0.712779 0.526939 -0.462905
+                        -0.149043 0.820158 -0.552383
+                        -0.802025 0.500868 -0.325403
+                        -0.418662 0.41856 -0.805934
+                        -0.632511 -0.591983 0.499485
+                        -0.650121 -0.628116 0.427566
+                        -0.736517 -0.503907 0.451244
+                        -0.794541 -0.375936 0.47684
+                        -0.834332 0.166973 -0.525367
+                        -0.687297 0.00998958 -0.726308
+                        -0.359016 0.194363 -0.91287
+                        0.0613031 0.0330765 -0.997571
+                        -0.81388 0.55028 -0.186523
+                        -0.664948 0.592593 -0.454618
+                        -0.129678 0.608867 -0.782601
+                        -0.054073 0.71312 -0.698953
+                        -0.556554 0.709314 -0.432575
+                        -0.100275 0.681076 -0.725314
+                        -0.464564 0.822519 -0.32809
+                        -0.342537 0.938004 -0.0530709
+                        0.101811 0.52215 -0.846755
+                        -0.517041 0.562582 -0.645113
+                        0.559628 0.45639 -0.691755
+                        -0.0630906 0.602161 -0.795878
+                        0.46123 0.535759 -0.707269
+                        -0.102587 0.260196 -0.96009
+                        0.551335 0.339249 -0.762194
+                        0.623138 0.04388 -0.78088
+                        0.500555 0.636687 -0.586579
+                        0.631177 0.61755 -0.469306
+                        0.484641 0.687836 -0.540375
+                        0.573322 0.729601 -0.372806
+                        0.594215 0.521617 -0.61223
+                        0.797723 0.37421 0.472869
+                        0.849342 0.243393 0.468378
+                        0.889824 0.130648 0.437201
+                        0.881411 0.112639 0.458723
+                        0.757521 0.529736 0.381501
+                        0.765034 0.513783 0.388265
+                        0.757504 0.529746 0.38152
+                        0.755654 0.503783 0.418558
+                        0.941534 0.324256 0.0914963
+                        0.76393 0.165153 -0.623807
+                        0.968522 0.0421387 -0.245337
+                        0.698746 0.296939 -0.650832
+                        0.73753 0.660835 0.13909
+                        0.561355 0.824815 0.0675296
+                        0.457884 0.88901 0.00178227
+                        0.305642 0.933098 -0.189505
+                        0.837618 0.546161 -0.0101516
+                        -0.840701 -0.251118 0.479752
+                        -0.834744 -0.244562 0.493348
+                        0.636107 0.192568 0.747185
+                        0.855466 0.0217933 0.5174
+                        0.336764 0.775877 0.533485
+                        0.279395 0.849133 0.448232
+                        0.835564 0.458825 0.30218
+                        0.526567 0.494135 0.691779
+                        0.517669 0.78443 0.341597
+                        0.438637 0.841546 0.315274
+                        0.409804 0.81106 0.417424
+                        0.610956 0.521883 0.59529
+                        -0.175174 -0.0981084 -0.979637
+                        -0.170055 -0.0752054 -0.982561
+                        -0.120372 -0.199084 -0.972562
+                        -0.120626 -0.199094 -0.972528
+                        -0.648472 -0.509714 0.565399
+                        -0.667409 -0.408773 0.622471
+                        -0.703043 -0.370604 0.606946
+                        -0.70303 -0.370533 0.607004
+                        -0.0999626 -0.0102823 0.994938
+                        0.21003 -0.002729 0.977691
+                        -0.155443 0.804621 0.573082
+                        -0.0592842 0.939331 0.33785
+                        -0.209418 0.674044 0.708384
+                        0.0440086 0.834421 0.549368
+                        -0.0947452 0.799239 0.593498
+                        0.0193913 0.883345 0.468322
+                        0.324463 0.896996 0.300204
+                        0.124351 0.525928 0.841389
+                        -0.169019 0.105887 -0.979908
+                        -0.199846 0.0590383 -0.978047
+                        0.741761 0.484473 0.463763
+                        0.727643 0.498424 0.471285
+                        -0.695642 -0.0142493 0.718248
+                        -0.0908783 0.235092 0.967715
+                        -0.661763 -0.0150981 0.749561
+                        -0.52207 0.755705 0.395416
+                        -0.217988 0.939979 0.262526
+                        -0.458059 0.696833 0.551911
+                        -0.339446 0.863598 0.372793
+                        -0.302035 0.915036 0.267363
+                        -0.314093 0.913781 0.257585
+                        -0.0423084 0.992623 0.113617
+                        -0.563994 0.593449 0.57422
+                        -0.138926 0.148597 -0.979091
+                        -0.123678 0.128066 -0.984024
+                        -0.881429 0.391812 0.263756
+                        -0.999696 -0.00863482 -0.0230773
+                        -0.679925 0.723298 0.120591
+                        -0.684844 0.599354 0.414444
+                        -0.386418 0.874413 0.2934
+                        -0.643022 0.764649 0.0428436
+                        -0.392509 0.917019 0.0708001
+                        -0.565328 0.815528 0.123767
+                        -0.797795 0.595652 -0.093389
+                        -0.0502947 0.137643 -0.989204
+                        -0.0963373 0.145255 -0.984693
+                        -0.980681 -0.00934391 0.195392
+                        -0.806008 0.404907 -0.431742
+                        -0.630373 0.768364 -0.110663
+                        -0.487172 0.82019 -0.299919
+                        -0.859633 0.509299 0.0405761
+                        -0.394316 0.890427 -0.227276
+                        -0.123225 0.991486 0.04208
+                    </float_array>
+                    <technique_common>
+                        <accessor count="129" source="#Geometry-CandleLowDetailThin-normals-array" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="Geometry-CandleLowDetailThin-map1" name="map1">
+                    <float_array id="Geometry-CandleLowDetailThin-map1-array" count="140">
+                        0.856435 0.0298651
+                        0.915729 0.0298651
+                        0.975023 0.0298651
+                        0.975023 0.943645
+                        0.915729 0.943645
+                        0.856435 0.943645
+                        0.827765 0.055522
+                        0.745831 0.055522
+                        0.500021 0.0178197
+                        0.254233 0.055522
+                        0.172299 0.055522
+                        0.336165 0.055522
+                        0.418098 0.055522
+                        0.500032 0.0565539
+                        0.581966 0.0565539
+                        0.663898 0.055522
+                        0.745831 0.970276
+                        0.827765 0.970276
+                        0.500021 0.987959
+                        0.172299 0.970276
+                        0.254233 0.970276
+                        0.336165 0.970276
+                        0.418098 0.970276
+                        0.500032 0.970276
+                        0.581966 0.970276
+                        0.663898 0.970276
+                        0.663898 0.241867
+                        0.759311 0.314585
+                        0.745831 0.321332
+                        0.172299 0.314585
+                        0.254233 0.238475
+                        0.172299 0.318843
+                        0.975023 0.50105
+                        0.975023 0.271988
+                        0.254233 0.177312
+                        0.172299 0.224942
+                        0.172299 0.150654
+                        0.254233 0.118092
+                        0.172299 0.120386
+                        0.254233 0.113554
+                        0.827765 0.314585
+                        0.827765 0.318843
+                        0.827765 0.224942
+                        0.745831 0.224942
+                        0.745831 0.150654
+                        0.827765 0.150654
+                        0.827765 0.120386
+                        0.745831 0.120386
+                        0.856435 0.276847
+                        0.856435 0.726114
+                        0.663898 0.180334
+                        0.663898 0.119249
+                        0.663898 0.113554
+                        0.581966 0.196471
+                        0.581966 0.176964
+                        0.581966 0.130433
+                        0.581966 0.123946
+                        0.975023 0.726412
+                        0.500032 0.171341
+                        0.500032 0.176964
+                        0.500032 0.130433
+                        0.500032 0.123946
+                        0.856435 0.491355
+                        0.418098 0.161011
+                        0.418098 0.15968
+                        0.418098 0.114635
+                        0.418098 0.113554
+                        0.336165 0.181627
+                        0.336165 0.156497
+                        0.336165 0.113554
+                    </float_array>
+                    <technique_common>
+                        <accessor count="70" source="#Geometry-CandleLowDetailThin-map1-array" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="Geometry-CandleLowDetailThin-vertices">
+                    <input semantic="POSITION" source="#Geometry-CandleLowDetailThin-positions" />
+                </vertices>
+                <polylist count="126" material="Material-CandleSmall">
+                    <input semantic="VERTEX" source="#Geometry-CandleLowDetailThin-vertices" offset="0" />
+                    <input semantic="NORMAL" source="#Geometry-CandleLowDetailThin-normals" offset="1" />
+                    <input semantic="TEXCOORD" source="#Geometry-CandleLowDetailThin-map1" offset="2" set="0" />
+                    <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+                    <p>2 0 0 10 0 1 0 0 2 1 1 3 14 1 4 3 1 5 57 2 6 56 2 7 58 2 8 59 2 9 57 2 10 58 2 8 60 2 11 59 2 9 58 2 8 61 2 12 60 2 11 58 2 8 62 2 13 61 2 12 58 2 8 63 2 14 62 2 13 58 2 8 64 2 15 63 2 14 58 2 8 56 2 7 64 2 15 58 2 8 23 3 16 24 4 17 31 5 18 24 4 19 25 6 20 31 5 18 25 6 20 26 7 21 31 5 18 26 7 21 27 8 22 31 5 18 27 8 22 28 9 23 31 5 18 28 9 23 29 10 24 31 5 18 29 10 24 30 11 25 31 5 18 30 11 25 23 3 16 31 5 18 22 12 26 15 13 27 65 14 28 16 15 29 17 16 30 66 17 31 12 18 32 6 19 32 11 20 33 4 21 33 11 20 33 6 19 32 17 22 30 25 23 20 66 24 31 24 25 19 66 24 31 25 23 20 17 26 30 16 15 29 34 27 34 33 28 35 34 27 34 16 15 29 33 28 35 41 29 36 34 27 34 42 30 37 34 27 34 41 29 36 49 31 38 50 32 39 41 29 36 42 33 37 41 29 36 50 32 39 57 34 10 59 35 9 49 31 38 50 32 39 49 31 38 59 35 9 15 13 27 16 15 40 65 36 28 66 37 41 65 38 28 16 15 40 66 39 41 24 25 17 65 40 28 23 41 16 65 40 28 24 25 17 33 28 42 16 15 40 32 42 43 15 13 27 32 42 43 16 15 40 40 43 44 41 29 45 32 42 43 33 28 42 32 42 43 41 29 45 49 31 46 41 29 45 48 44 47 40 45 44 48 44 47 41 29 45 56 46 7 57 34 6 48 44 47 49 31 46 48 44 47 57 34 6 5 47 48 11 48 48 2 49 0 10 50 1 2 49 0 11 48 48 14 51 4 13 52 49 3 53 5 9 54 49 3 53 5 13 52 49 22 55 26 65 56 28 30 57 25 23 41 16 30 57 25 65 58 28 22 12 26 39 59 50 15 13 27 32 42 43 15 13 27 39 59 50 32 42 43 39 59 50 40 43 44 47 60 51 40 43 44 39 59 50 48 44 47 40 45 44 55 61 52 47 60 51 55 61 52 40 62 44 56 46 7 48 44 47 64 63 15 55 61 52 64 63 15 48 44 47 11 20 33 4 21 33 10 64 1 0 65 2 10 64 1 4 21 33 21 66 53 22 12 26 29 67 24 30 57 25 29 67 24 22 12 26 38 68 54 39 59 50 21 69 53 22 70 26 21 71 53 39 59 50 47 60 51 39 59 50 46 72 55 38 68 54 46 73 55 39 59 50 54 74 56 55 61 52 46 73 55 47 60 51 46 73 55 55 61 52 63 75 14 64 63 15 54 74 56 55 61 52 54 74 56 64 63 15 9 76 49 8 77 57 3 78 5 1 79 3 3 78 5 8 77 57 8 80 57 13 81 57 1 82 3 14 83 4 1 82 3 13 81 57 20 84 58 21 66 53 28 85 23 29 67 24 28 85 23 21 66 53 37 86 59 38 68 54 20 87 58 21 69 53 20 88 58 38 68 54 46 73 55 38 68 54 45 89 60 37 86 59 45 89 60 38 68 54 53 90 61 54 74 56 45 91 60 46 92 55 45 91 60 54 74 56 63 75 14 54 74 56 62 93 13 53 90 61 62 93 13 54 74 56 6 94 32 8 77 57 7 95 62 9 76 49 7 95 62 8 77 57 13 52 49 12 96 62 9 54 49 7 97 62 9 54 49 12 96 62 19 98 63 20 99 58 27 100 22 28 85 23 27 100 22 20 99 58 36 101 64 37 86 59 19 102 63 20 87 58 19 102 63 37 86 59 45 89 60 37 86 59 44 103 65 36 101 64 44 104 65 37 86 59 53 90 61 45 91 60 52 105 66 44 106 65 52 105 66 45 107 60 62 93 13 53 90 61 61 108 12 52 105 66 61 108 12 53 90 61 4 109 33 6 94 32 5 110 48 7 95 62 5 110 48 6 94 32 6 19 32 12 18 32 8 80 57 13 81 57 8 80 57 12 18 32 19 98 63 27 100 22 18 111 67 26 112 21 18 111 67 27 100 22 35 113 68 36 101 64 18 114 67 19 102 63 18 115 67 36 101 64 44 104 65 36 101 64 43 116 69 35 113 68 43 116 69 36 101 64 52 105 66 44 104 65 51 117 69 43 118 69 51 117 69 44 106 65 60 119 11 61 108 12 51 117 69 52 105 66 51 117 69 61 108 12 2 120 0 0 121 2 5 110 48 4 109 33 5 110 48 0 121 2 7 97 62 12 96 62 5 47 48 11 48 48 5 47 48 12 96 62 18 122 67 26 112 21 17 123 30 25 23 20 17 123 30 26 112 21 34 27 34 35 113 68 17 26 30 18 114 67 17 124 30 35 113 68 42 125 37 43 126 69 34 27 34 35 113 68 34 27 34 43 116 69 50 32 39 51 117 69 42 127 37 43 118 69 42 128 37 51 117 69 59 35 9 60 119 11 50 32 39 51 117 69 50 32 39 60 119 11</p>
+                </polylist>
+                <extra>
+                    <technique profile="modo401">
+                        <param sid="render" name="Render" type="Name">default</param>
+                        <param sid="dissolve" name="Dissolve" type="float">0</param>
+                        <param sid="curves" name="Render_Curves" type="bool">false</param>
+                        <param sid="radius" name="Curve_Radius" type="float">0.05</param>
+                    </technique>
+                </extra>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_lights>
+        <light id="Light-Render" name="Render">
+            <technique_common>
+                <ambient>
+                    <color sid="ambient_light_rgb">0.05 0.05 0.05</color>
+                </ambient>
+            </technique_common>
+        </light>
+    </library_lights>
+    <library_nodes id="shader_tree" name="Shader_Tree">
+        <node sid="shader_tree_render" name="Render">
+            <extra>
+                <technique profile="modo401">
+                    <param sid="first" name="Frame_Range_First" type="int">1</param>
+                    <param sid="last" name="Frame_Range_Last" type="int">120</param>
+                    <param sid="dpi" name="Frame_DPI" type="float">300</param>
+                    <param sid="resUnit" name="Resolution_Unit" type="Name">pixels</param>
+                    <param sid="pAspect" name="Frame_Pixel_Aspect_Ratio" type="float">1</param>
+                    <param sid="bucketX" name="Bucket_Width" type="int">32</param>
+                    <param sid="bucketY" name="Bucket_Height" type="int">32</param>
+                    <param sid="bktOrder" name="Bucket_Order" type="Name">hilbert</param>
+                    <param sid="bktSkip" name="Skip_Existing_Buckets" type="bool">false</param>
+                    <param sid="region" name="Render_Region" type="bool">false</param>
+                    <param sid="regX0" name="Render_Region_Left" type="float">0</param>
+                    <param sid="regX1" name="Render_Region_Right" type="float">1</param>
+                    <param sid="regY0" name="Render_Region_Top" type="float">0</param>
+                    <param sid="regY1" name="Render_Region_Bottom" type="float">1</param>
+                    <param sid="aa" name="Render_Antialiasing" type="Name">s8</param>
+                    <param sid="aaFilter" name="Render_Antialiasing_Filter" type="Name">gaussian</param>
+                    <param sid="fineRate" name="Refinement_Shading_Rate" type="float">0.25</param>
+                    <param sid="fineThresh" name="Refinement_Threshold" type="float">0.1</param>
+                    <param sid="bktRefine" name="Refine_Bucket_Borders" type="bool">false</param>
+                    <param sid="dof" name="Render_Depth_of_Field" type="bool">false</param>
+                    <param sid="mBlur" name="Render_Motion_Blur" type="bool">false</param>
+                    <param sid="stereo" name="Render_Stereoscopic" type="bool">false</param>
+                    <param sid="rayShadow" name="Ray_Tracing_Shadows" type="bool">true</param>
+                    <param sid="reflDepth" name="Reflection_Depth" type="int">8</param>
+                    <param sid="refrDepth" name="Refraction_Depth" type="int">8</param>
+                    <param sid="rayThresh" name="Ray_Threshold" type="float">0.001</param>
+                    <param sid="subdAdapt" name="Adaptive_Subdivision" type="bool">false</param>
+                    <param sid="subdRate" name="Subdivision_Rate" type="float">10</param>
+                    <param sid="dispEnable" name="Micropoly_Displacement" type="bool">true</param>
+                    <param sid="dispRate" name="Displacement_Rate" type="float">1</param>
+                    <param sid="dispRatio" name="Displacement_Ratio" type="float">4</param>
+                    <param sid="edgeMin" name="Minimum_Edge_Length" type="float">0.0001</param>
+                    <param sid="dispSmooth" name="Smooth_Positions" type="bool">true</param>
+                    <param sid="ambRad" name="Ambient_Intensity" type="float">0.05</param>
+                    <param sid="ambColor" name="Ambient_Color" type="color">1 1 1</param>
+                    <param sid="globEnable" name="Enable_Indirect_Illumination" type="bool">false</param>
+                    <param sid="globScope" name="Indirect_Illumination_Scope" type="Name">all</param>
+                    <param sid="globRays" name="Indirect_Rays" type="int">64</param>
+                    <param sid="globLimit" name="Indirect_Bounces" type="int">1</param>
+                    <param sid="globRange" name="Indirect_Range" type="float">0</param>
+                    <param sid="globSubs" name="Subsurface_Scattering" type="int">0</param>
+                    <param sid="globVols" name="Volumetrics_Affect_Indirect" type="bool">false</param>
+                    <param sid="irrCache" name="Enable_Irradiance_Caching" type="bool">true</param>
+                    <param sid="irrRays" name="Irradiance_Rays" type="int">256</param>
+                    <param sid="globSuper" name="Indirect_Supersampling" type="bool">true</param>
+                    <param sid="irrRate" name="Irradiance_Rate" type="float">2.5</param>
+                    <param sid="irrRatio" name="Irradiance_Ratio" type="float">6</param>
+                    <param sid="irrVals" name="Interpolation_Values" type="int">1</param>
+                    <param sid="irrGrads" name="Irradiance_Gradients" type="Name">both</param>
+                    <param sid="irrWalk" name="Walkthrough_Mode" type="bool">false</param>
+                    <param sid="irrLEnable" name="Load_Irradiance_before_Render" type="bool">false</param>
+                    <param sid="irrLName" name="Load_Irradiance_File" type="Name"></param>
+                    <param sid="irrSEnable" name="Save_Irradiance_after_Render" type="bool">false</param>
+                    <param sid="irrSName" name="Save_Irradiance_File" type="Name"></param>
+                    <param sid="causEnable" name="Enable_Direct_Caustics" type="bool">false</param>
+                    <param sid="causTotal" name="Caustics_Total_Photons" type="int">100000</param>
+                    <param sid="causLocal" name="Caustics_Local_Photons" type="int">32</param>
+                    <param sid="globCaus" name="Indirect_Caustics" type="Name">refraction</param>
+                </technique>
+            </extra>
+        </node>
+        <node sid="shader_tree_environment" name="Environment">
+            <extra>
+                <technique profile="modo401">
+                    <param sid="radiance" name="Environment_Intensity" type="float">1</param>
+                    <param sid="visCam" name="Environment_Visible_to_Camera" type="bool">true</param>
+                    <param sid="visInd" name="Environment_Visible_to_Indirect_Rays" type="bool">true</param>
+                    <param sid="visRefl" name="Environment_Visible_to_Reflection_Rays" type="bool">true</param>
+                    <param sid="visRefr" name="Environment_Visible_to_Refraction_Rays" type="bool">true</param>
+                </technique>
+            </extra>
+        </node>
+    </library_nodes>
+    <library_visual_scenes>
+        <visual_scene id="DefaultScene">
+            <node id="RenderNode" name="Render" type="NODE">
+                <instance_light url="#Light-Render" />
+            </node>
+            <node id="Geometry-CandleLowDetailThinNode" name="CandleLowDetailThin" type="NODE">
+                <translate sid="Pivot_Position">-0.000798715 -0.00427969 0.000922594</translate>
+                <translate sid="Position">0.000798715 0.00427969 -0.000922594</translate>
+                <rotate sid="Rotation__3_Z">0 0 1 0</rotate>
+                <rotate sid="Rotation__3_Y">0 1 0 0</rotate>
+                <rotate sid="Rotation__3_X">1 0 0 0</rotate>
+                <rotate sid="Rotation__2_Z">0 0 1 0</rotate>
+                <rotate sid="Rotation__2_Y">0 1 0 0</rotate>
+                <rotate sid="Rotation__2_X">1 0 0 0</rotate>
+                <rotate sid="RotationZ">0 0 1 0</rotate>
+                <rotate sid="RotationY">0 1 0 0</rotate>
+                <rotate sid="RotationX">1 0 0 0</rotate>
+                <scale sid="Scale">1 1 1</scale>
+                <translate sid="Pivot_Position_Inverse">0.000798715 0.00427969 -0.000922594</translate>
+                <instance_geometry url="#Geometry-CandleLowDetailThin">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="Material-CandleSmall" target="#Material-CandleSmall">
+                                <bind_vertex_input semantic="map1" input_semantic="TEXCOORD" input_set="0" />
+                            </instance_material>
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+                <extra>
+                    <technique profile="modo401">
+                        <param sid="Pivot_Position_Inverse" type="Name" semantic="inv">Pivot_Position</param>
+                        <param sid="Pivot_Position" type="Name" semantic="piv">Pivot_Position_Inverse</param>
+                    </technique>
+                </extra>
+            </node>
+            <node id="TextureLocatorsNode" name="TextureLocators" type="NODE">
+                <node id="Candle__Image___Texture_Node" name="Candle__Image___Texture_" type="NODE">
+                    <translate sid="Position__2_">0 0 0</translate>
+                    <rotate sid="Rotation__4_Y">0 1 0 0</rotate>
+                    <rotate sid="Rotation__4_X">1 0 0 0</rotate>
+                    <rotate sid="Rotation__4_Z">0 0 1 0</rotate>
+                    <scale sid="Scale__2_">1 1 1</scale>
+                </node>
+                <node id="Candle_L__Image___Texture_Node" name="Candle_L__Image___Texture_" type="NODE">
+                    <translate sid="Position__3_">0 0 0</translate>
+                    <rotate sid="Rotation__5_Y">0 1 0 0</rotate>
+                    <rotate sid="Rotation__5_X">1 0 0 0</rotate>
+                    <rotate sid="Rotation__5_Z">0 0 1 0</rotate>
+                    <scale sid="Scale__3_">1 1 1</scale>
+                </node>
+            </node>
+            <extra>
+                <technique profile="modo401">
+                    <param sid="fps" name="Scene_FPS" type="float">24</param>
+                    <param sid="sceneS" name="Scene_Start_Time" type="float">1</param>
+                    <param sid="sceneE" name="Scene_End_Time" type="float">48</param>
+                    <param sid="currentS" name="Scene_Current_Start_Time" type="float">1</param>
+                    <param sid="currentE" name="Scene_Current_End_Time" type="float">48</param>
+                    <param sid="timeSys" name="Scene_Time_System" type="Name">frames</param>
+                </technique>
+            </extra>
+            <extra>
+                <technique profile="MAX3D">
+                    <frame_rate>24</frame_rate>
+                </technique>
+            </extra>
+            <extra>
+                <technique profile="MAYA">
+                    <start_time>1</start_time>
+                    <end_time>48</end_time>
+                </technique>
+            </extra>
+            <extra>
+                <technique profile="OKINO" />
+            </extra>
+            <extra>
+                <technique profile="XSI">
+                    <SI_Scene>
+                        <frame_rate>24</frame_rate>
+                    </SI_Scene>
+                </technique>
+            </extra>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#DefaultScene" />
+    </scene>
+</COLLADA>

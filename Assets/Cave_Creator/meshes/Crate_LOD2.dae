@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>modo 501 [Build 43413], Microsoft Windows 7 Service Pack 1 (6.1.7601 Service Pack 1)</authoring_tool>
+            <comments>
+                Plug-in: [Build 43413];
+                Use Absolute Path: No;
+                Merge Reference Items: No;
+                Save Hidden Items: Yes;
+                Save Cameras: Yes;
+                Save Lights: Yes;
+                Save Locators: Yes;
+                Save Triangles as Triangles: No;
+                Bake Matrices: No;
+                Save Vertex Normals: Yes;
+                Save UV Texture Coordinates: Yes;
+                Save Vertex Colors: Yes;
+                Save Vertex Weights: Yes;
+                Save Animation: Yes;
+                Sample Animation: No;
+                Sample Animation Start: 0;
+                Sample Animation End: 120;
+                Save modo Profile: Yes;
+                Save Maya Profile: Yes;
+                Save 3ds Max Profile: Yes;
+                Formatted Arrays: Yes;
+            </comments>
+            <source_data>file:///E:/3d/3D-Objekte/Cave%20creator/Textures/Crate_LOD2.lwo</source_data>
+        </contributor>
+        <created>2011-09-12T15:31:38Z</created>
+        <modified>2011-09-12T15:31:38Z</modified>
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="Image0001" name="Image0001">
+            <init_from>../Textures/Crate.tga</init_from>
+        </image>
+        <image id="Image0002" name="Image0002">
+            <init_from>../Textures/Crate_N.tga</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="Material-Crate" name="Crate">
+            <instance_effect url="#Effect-Crate" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="Effect-Crate" name="Crate">
+            <profile_COMMON>
+                <newparam sid="Image0001-surface">
+                    <surface type="2D">
+                        <init_from>Image0001</init_from>
+                        <format>A8R8G8B8</format>
+                    </surface>
+                </newparam>
+                <newparam sid="Image0001-sampler">
+                    <sampler2D>
+                        <source>Image0001-surface</source>
+                        <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+                        <magfilter>LINEAR</magfilter>
+                    </sampler2D>
+                </newparam>
+                <technique sid="common">
+                    <phong>
+                        <emission>
+                            <texture texture="-sampler" texcoord="" />
+                        </emission>
+                        <diffuse>
+                            <texture texture="Image0001-sampler" texcoord="map1" />
+                        </diffuse>
+                        <specular>
+                            <color sid="specular_effect_rgb">0.2 0.2 0.2 1</color>
+                        </specular>
+                        <transparent opaque="RGB_ZERO">
+                            <color sid="transparent_effect_rgb">0 0 0 1</color>
+                        </transparent>
+                        <transparency>
+                            <float sid="transparency_effect_float">-1.#IND</float>
+                        </transparency>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="Geometry-Crate_LOD3" name="Crate_LOD3">
+            <mesh>
+                <source id="Geometry-Crate_LOD3-positions" name="positions">
+                    <float_array id="Geometry-Crate_LOD3-positions-array" count="24">
+                        -0.381487 -0.285794 0.299495
+                        -0.381487 0.313196 0.299495
+                        -0.381487 0.313196 -0.299495
+                        -0.381487 -0.285794 -0.299495
+                        0.217504 0.313196 0.299495
+                        0.217503 0.313196 -0.299495
+                        0.217503 -0.285794 -0.299495
+                        0.217504 -0.285794 0.299495
+                    </float_array>
+                    <technique_common>
+                        <accessor count="8" source="#Geometry-Crate_LOD3-positions-array" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="Geometry-Crate_LOD3-normals" name="normals">
+                    <float_array id="Geometry-Crate_LOD3-normals-array" count="36">
+                        -1.99017e-007 -1 9.90193e-014
+                        -1.99017e-007 -1 4.95097e-014
+                        -1.99017e-007 -1 0
+                        1 -3.21813e-013 -4.97542e-007
+                        1 -1.60906e-013 -4.97543e-007
+                        1 0 -4.97543e-007
+                        1.28725e-013 6.46805e-007 1
+                        3.23402e-007 3.23403e-007 1
+                        6.46805e-007 0 1
+                        0 0 -1
+                        0 1 0
+                        -1 0 0
+                    </float_array>
+                    <technique_common>
+                        <accessor count="12" source="#Geometry-Crate_LOD3-normals-array" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="Geometry-Crate_LOD3-Lightmap" name="Lightmap">
+                    <float_array id="Geometry-Crate_LOD3-Lightmap-array" count="48">
+                        0.490112 0.334005
+                        0.490112 0.662592
+                        2.98023e-008 0.334005
+                        2.98023e-008 0.662592
+                        0.498804 0.66771
+                        0.988915 0.66771
+                        0.498804 0.996297
+                        0.988915 0.996297
+                        0.509888 0.333294
+                        1 0.333294
+                        0.509889 0.661881
+                        1 0.661881
+                        0.988915 0.329729
+                        0.498804 0.329728
+                        0.988915 0.00114107
+                        0.498804 0.00114107
+                        2.98023e-008 0.328587
+                        3.57628e-007 0
+                        0.490112 0.328587
+                        0.490112 1.49012e-007
+                        0.490112 1
+                        2.98023e-008 1
+                        0.490112 0.671413
+                        2.98023e-008 0.671413
+                    </float_array>
+                    <technique_common>
+                        <accessor count="24" source="#Geometry-Crate_LOD3-Lightmap-array" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="Geometry-Crate_LOD3-map1" name="map1">
+                    <float_array id="Geometry-Crate_LOD3-map1-array" count="16">
+                        1 1
+                        1.78814e-007 1
+                        0.999999 4.76837e-007
+                        -2.98023e-008 9.53674e-007
+                        1 -2.98023e-008
+                        1 1
+                        0 -2.98023e-008
+                        0 1
+                    </float_array>
+                    <technique_common>
+                        <accessor count="8" source="#Geometry-Crate_LOD3-map1-array" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="Geometry-Crate_LOD3-vertices">
+                    <input semantic="POSITION" source="#Geometry-Crate_LOD3-positions" />
+                </vertices>
+                <polylist count="12" material="Material-Crate">
+                    <input semantic="VERTEX" source="#Geometry-Crate_LOD3-vertices" offset="0" />
+                    <input semantic="NORMAL" source="#Geometry-Crate_LOD3-normals" offset="1" />
+                    <input semantic="TEXCOORD" source="#Geometry-Crate_LOD3-Lightmap" offset="2" set="0" />
+                    <input semantic="TEXCOORD" source="#Geometry-Crate_LOD3-map1" offset="3" set="1" />
+                    <vcount>3 3 3 3 3 3 3 3 3 3 3 3</vcount>
+                    <p>7 0 0 0 0 1 1 1 6 1 2 2 3 2 3 3 6 1 2 2 0 1 1 1 7 3 4 4 6 4 5 5 4 4 6 6 5 5 7 7 4 4 6 6 6 4 5 5 7 6 8 4 4 7 9 5 0 7 10 6 1 8 11 7 0 7 10 6 4 7 9 5 6 9 12 6 3 9 13 4 5 9 14 7 2 9 15 5 5 9 14 7 3 9 13 4 1 10 16 6 4 10 17 4 2 10 18 7 5 10 19 5 2 10 18 7 4 10 17 4 2 11 20 7 3 11 21 6 1 11 22 5 0 11 23 4 1 11 22 5 3 11 21 6</p>
+                </polylist>
+                <extra>
+                    <technique profile="modo401">
+                        <param sid="render" name="Render" type="Name">default</param>
+                        <param sid="dissolve" name="Dissolve" type="float">0</param>
+                        <param sid="curves" name="Render_Curves" type="bool">false</param>
+                        <param sid="radius" name="Curve_Radius" type="float">0.05</param>
+                    </technique>
+                </extra>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_lights>
+        <light id="Light-Render" name="Render">
+            <technique_common>
+                <ambient>
+                    <color sid="ambient_light_rgb">0.05 0.05 0.05</color>
+                </ambient>
+            </technique_common>
+        </light>
+    </library_lights>
+    <library_nodes id="shader_tree" name="Shader_Tree">
+        <node sid="shader_tree_render" name="Render">
+            <extra>
+                <technique profile="modo401">
+                    <param sid="first" name="Frame_Range_First" type="int">1</param>
+                    <param sid="last" name="Frame_Range_Last" type="int">120</param>
+                    <param sid="dpi" name="Frame_DPI" type="float">300</param>
+                    <param sid="resUnit" name="Resolution_Unit" type="Name">pixels</param>
+                    <param sid="pAspect" name="Frame_Pixel_Aspect_Ratio" type="float">1</param>
+                    <param sid="bucketX" name="Bucket_Width" type="int">32</param>
+                    <param sid="bucketY" name="Bucket_Height" type="int">32</param>
+                    <param sid="bktOrder" name="Bucket_Order" type="Name">hilbert</param>
+                    <param sid="bktSkip" name="Skip_Existing_Buckets" type="bool">false</param>
+                    <param sid="region" name="Render_Region" type="bool">false</param>
+                    <param sid="regX0" name="Render_Region_Left" type="float">0</param>
+                    <param sid="regX1" name="Render_Region_Right" type="float">1</param>
+                    <param sid="regY0" name="Render_Region_Top" type="float">0</param>
+                    <param sid="regY1" name="Render_Region_Bottom" type="float">1</param>
+                    <param sid="aa" name="Render_Antialiasing" type="Name">s8</param>
+                    <param sid="aaFilter" name="Render_Antialiasing_Filter" type="Name">gaussian</param>
+                    <param sid="fineRate" name="Refinement_Shading_Rate" type="float">0.25</param>
+                    <param sid="fineThresh" name="Refinement_Threshold" type="float">0.1</param>
+                    <param sid="bktRefine" name="Refine_Bucket_Borders" type="bool">false</param>
+                    <param sid="dof" name="Render_Depth_of_Field" type="bool">false</param>
+                    <param sid="mBlur" name="Render_Motion_Blur" type="bool">false</param>
+                    <param sid="stereo" name="Render_Stereoscopic" type="bool">false</param>
+                    <param sid="rayShadow" name="Ray_Tracing_Shadows" type="bool">true</param>
+                    <param sid="reflDepth" name="Reflection_Depth" type="int">8</param>
+                    <param sid="refrDepth" name="Refraction_Depth" type="int">8</param>
+                    <param sid="rayThresh" name="Ray_Threshold" type="float">0.001</param>
+                    <param sid="subdAdapt" name="Adaptive_Subdivision" type="bool">false</param>
+                    <param sid="subdRate" name="Subdivision_Rate" type="float">10</param>
+                    <param sid="dispEnable" name="Micropoly_Displacement" type="bool">true</param>
+                    <param sid="dispRate" name="Displacement_Rate" type="float">1</param>
+                    <param sid="dispRatio" name="Displacement_Ratio" type="float">4</param>
+                    <param sid="edgeMin" name="Minimum_Edge_Length" type="float">0.0001</param>
+                    <param sid="dispSmooth" name="Smooth_Positions" type="bool">true</param>
+                    <param sid="ambRad" name="Ambient_Intensity" type="float">0.05</param>
+                    <param sid="ambColor" name="Ambient_Color" type="color">1 1 1</param>
+                    <param sid="globEnable" name="Enable_Indirect_Illumination" type="bool">false</param>
+                    <param sid="globScope" name="Indirect_Illumination_Scope" type="Name">all</param>
+                    <param sid="globRays" name="Indirect_Rays" type="int">64</param>
+                    <param sid="globLimit" name="Indirect_Bounces" type="int">1</param>
+                    <param sid="globRange" name="Indirect_Range" type="float">0</param>
+                    <param sid="globSubs" name="Subsurface_Scattering" type="int">0</param>
+                    <param sid="globVols" name="Volumetrics_Affect_Indirect" type="bool">false</param>
+                    <param sid="irrCache" name="Enable_Irradiance_Caching" type="bool">true</param>
+                    <param sid="irrRays" name="Irradiance_Rays" type="int">256</param>
+                    <param sid="globSuper" name="Indirect_Supersampling" type="bool">true</param>
+                    <param sid="irrRate" name="Irradiance_Rate" type="float">2.5</param>
+                    <param sid="irrRatio" name="Irradiance_Ratio" type="float">6</param>
+                    <param sid="irrVals" name="Interpolation_Values" type="int">1</param>
+                    <param sid="irrGrads" name="Irradiance_Gradients" type="Name">both</param>
+                    <param sid="irrWalk" name="Walkthrough_Mode" type="bool">false</param>
+                    <param sid="irrLEnable" name="Load_Irradiance_before_Render" type="bool">false</param>
+                    <param sid="irrLName" name="Load_Irradiance_File" type="Name"></param>
+                    <param sid="irrSEnable" name="Save_Irradiance_after_Render" type="bool">false</param>
+                    <param sid="irrSName" name="Save_Irradiance_File" type="Name"></param>
+                    <param sid="causEnable" name="Enable_Direct_Caustics" type="bool">false</param>
+                    <param sid="causTotal" name="Caustics_Total_Photons" type="int">100000</param>
+                    <param sid="causLocal" name="Caustics_Local_Photons" type="int">32</param>
+                    <param sid="globCaus" name="Indirect_Caustics" type="Name">refraction</param>
+                </technique>
+            </extra>
+        </node>
+        <node sid="shader_tree_environment" name="Environment">
+            <extra>
+                <technique profile="modo401">
+                    <param sid="radiance" name="Environment_Intensity" type="float">1</param>
+                    <param sid="visCam" name="Environment_Visible_to_Camera" type="bool">true</param>
+                    <param sid="visInd" name="Environment_Visible_to_Indirect_Rays" type="bool">true</param>
+                    <param sid="visRefl" name="Environment_Visible_to_Reflection_Rays" type="bool">true</param>
+                    <param sid="visRefr" name="Environment_Visible_to_Refraction_Rays" type="bool">true</param>
+                </technique>
+            </extra>
+        </node>
+    </library_nodes>
+    <library_visual_scenes>
+        <visual_scene id="DefaultScene">
+            <node id="RenderNode" name="Render" type="NODE">
+                <instance_light url="#Light-Render" />
+            </node>
+            <node id="Geometry-Crate_LOD3Node" name="Crate_LOD3" type="NODE">
+                <translate sid="Pivot_Position">-0.0819919 0.0137011 0</translate>
+                <translate sid="Position">0.0819919 -0.0137011 0</translate>
+                <rotate sid="Rotation__3_Z">0 0 1 0</rotate>
+                <rotate sid="Rotation__3_Y">0 1 0 0</rotate>
+                <rotate sid="Rotation__3_X">1 0 0 0</rotate>
+                <rotate sid="Rotation__2_Z">0 0 1 0</rotate>
+                <rotate sid="Rotation__2_Y">0 1 0 0</rotate>
+                <rotate sid="Rotation__2_X">1 0 0 0</rotate>
+                <rotate sid="RotationZ">0 0 1 0</rotate>
+                <rotate sid="RotationY">0 1 0 0</rotate>
+                <rotate sid="RotationX">1 0 0 0</rotate>
+                <scale sid="Scale">1 1 1</scale>
+                <translate sid="Pivot_Position_Inverse">0.0819919 -0.0137011 0</translate>
+                <instance_geometry url="#Geometry-Crate_LOD3">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="Material-Crate" target="#Material-Crate">
+                                <bind_vertex_input semantic="map1" input_semantic="TEXCOORD" input_set="1" />
+                            </instance_material>
+                        </technique_common>
+                    </bind_material>
+                </instance_geometry>
+                <extra>
+                    <technique profile="modo401">
+                        <param sid="Pivot_Position_Inverse" type="Name" semantic="inv">Pivot_Position</param>
+                        <param sid="Pivot_Position" type="Name" semantic="piv">Pivot_Position_Inverse</param>
+                    </technique>
+                </extra>
+            </node>
+            <node id="TextureLocatorsNode" name="TextureLocators" type="NODE">
+                <node id="Crate__Image___Texture_Node" name="Crate__Image___Texture_" type="NODE">
+                    <translate sid="Position__2_">0 0 0</translate>
+                    <rotate sid="Rotation__4_Y">0 1 0 0</rotate>
+                    <rotate sid="Rotation__4_X">1 0 0 0</rotate>
+                    <rotate sid="Rotation__4_Z">0 0 1 0</rotate>
+                    <scale sid="Scale__2_">1 1 1</scale>
+                </node>
+                <node id="Crate_N__Image___Texture_Node" name="Crate_N__Image___Texture_" type="NODE">
+                    <translate sid="Position__3_">0 0 0</translate>
+                    <rotate sid="Rotation__5_Y">0 1 0 0</rotate>
+                    <rotate sid="Rotation__5_X">1 0 0 0</rotate>
+                    <rotate sid="Rotation__5_Z">0 0 1 0</rotate>
+                    <scale sid="Scale__3_">1 1 1</scale>
+                </node>
+            </node>
+            <extra>
+                <technique profile="modo401">
+                    <param sid="fps" name="Scene_FPS" type="float">24</param>
+                    <param sid="sceneS" name="Scene_Start_Time" type="float">1</param>
+                    <param sid="sceneE" name="Scene_End_Time" type="float">48</param>
+                    <param sid="currentS" name="Scene_Current_Start_Time" type="float">1</param>
+                    <param sid="currentE" name="Scene_Current_End_Time" type="float">48</param>
+                    <param sid="timeSys" name="Scene_Time_System" type="Name">frames</param>
+                </technique>
+            </extra>
+            <extra>
+                <technique profile="MAX3D">
+                    <frame_rate>24</frame_rate>
+                </technique>
+            </extra>
+            <extra>
+                <technique profile="MAYA">
+                    <start_time>1</start_time>
+                    <end_time>48</end_time>
+                </technique>
+            </extra>
+            <extra>
+                <technique profile="OKINO" />
+            </extra>
+            <extra>
+                <technique profile="XSI">
+                    <SI_Scene>
+                        <frame_rate>24</frame_rate>
+                    </SI_Scene>
+                </technique>
+            </extra>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#DefaultScene" />
+    </scene>
+</COLLADA>
