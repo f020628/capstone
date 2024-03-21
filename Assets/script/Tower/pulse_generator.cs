@@ -69,7 +69,7 @@ public class pulse_generator : MonoBehaviour
             if (enemy != null)
             {
                 Enemy target = enemy.GetComponent<Enemy>();
-                target.SlowDown(0.2f,2f);
+                target.SlowDown(0.8f,1.5f);
             }
         }
         
